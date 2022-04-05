@@ -1,0 +1,101 @@
+{"app_name":"clang","timestamp":"2022-04-05 11:48:51.00 +0200","app_version":"","slice_uuid":"adc9168c-13ad-3edb-ac8f-57e128089f19","build_version":"","platform":1,"share_with_app_devs":0,"is_first_party":1,"bug_type":"309","os_version":"macOS 12.3.1 (21E258)","incident_id":"3B4C0117-2FC0-4147-83EA-D21133568A1D","name":"clang"}
+{
+  "uptime" : 160000,
+  "procLaunch" : "2022-04-05 11:48:49.6327 +0200",
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "MacBookAir8,1",
+  "procStartAbsTime" : 164050833259309,
+  "coalitionID" : 1364,
+  "osVersion" : {
+    "train" : "macOS 12.3.1",
+    "build" : "21E258",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2022-04-05 11:48:51.2870 +0200",
+  "incident" : "3B4C0117-2FC0-4147-83EA-D21133568A1D",
+  "bug_type" : "309",
+  "pid" : 13347,
+  "procExitAbsTime" : 164052486980184,
+  "cpuType" : "X86-64",
+  "procName" : "clang",
+  "procPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/bin\/clang",
+  "parentProc" : "clang",
+  "parentPid" : 13346,
+  "coalitionName" : "com.googlecode.iterm2",
+  "crashReporterKey" : "44763583-37A5-A250-2F18-46E34F29652F",
+  "responsiblePid" : 1422,
+  "responsibleProc" : "iTerm2",
+  "wakeTime" : 78569,
+  "bridgeVersion" : {"build":"19P4243","train":"6.4"},
+  "sleepWakeUUID" : "C39E4701-658A-429E-8ED2-F68F9037D230",
+  "sip" : "enabled",
+  "vmRegionInfo" : "0x1c is not in any region.  Bytes before following region: 4429770724\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      UNUSED SPACE AT START\n--->  \n      __TEXT                      10808f000-10c4c3000    [ 68.2M] r-x\/r-x SM=COW  ...usr\/bin\/clang",
+  "isCorpse" : 1,
+  "exception" : {"codes":"0x0000000000000001, 0x000000000000001c","rawCodes":[1,28],"type":"EXC_BAD_ACCESS","signal":"SIGSEGV","subtype":"KERN_INVALID_ADDRESS at 0x000000000000001c"},
+  "termination" : {"flags":0,"code":11,"namespace":"SIGNAL","indicator":"Segmentation fault: 11","byProc":"exc handler","byPid":13347},
+  "vmregioninfo" : "0x1c is not in any region.  Bytes before following region: 4429770724\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      UNUSED SPACE AT START\n--->  \n      __TEXT                      10808f000-10c4c3000    [ 68.2M] r-x\/r-x SM=COW  ...usr\/bin\/clang",
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":3372110,"instructionState":{"instructionStream":{"bytes":[202,33,214,72,137,247,72,193,231,4,73,141,12,58,73,139,28,58,72,57,195,15,133,249,10,0,0,72,139,89,8,72,133,219,116,21,72,137,216,72,129,196,232,4,0,0,91,65,92,65,93,65,94,65,95,93,195,73,139,132,36,168,58,0,0,131,184,140,0,0,0,10,73,189,0,0,0,0,16,0,0,0,76,137,125,176,15,132,236,13,0,0,76,139,117,200,65,139,78,28,131,225,127,131,193,221,72,190,0,0,0,0,4,0,0,0,131,249,2,15,135,11,6,0,0,77,133,246,15,132,2,6,0,0,72,141,157,128,251,255,255,76,137,35,73,139,132,36,80,63,0,0,72,131,224,240,72,139,48,76,137,231,232,188,2,243,255,72,137,67,8,76,137,115,16,15,87,192,15,17,67,24,69,49,255,68,137,123,40,15,17,67],"offset":96}},"threadState":{"r13":{"value":68719476736},"rax":{"value":140560406962096},"rflags":{"value":66199},"cpu":{"value":3},"r14":{"value":0},"rsi":{"value":512},"r8":{"value":7},"cr2":{"value":28},"rdx":{"value":64},"r10":{"value":140560417596928},"r9":{"value":0},"r15":{"value":140560421685608},"rbx":{"value":0},"trap":{"value":14,"description":"(no mapping for user data read)"},"err":{"value":4},"r11":{"value":203},"rip":{"value":4454457181,"matchesCrashFrame":1},"rbp":{"value":140701919000864},"rsp":{"value":140701918999568},"r12":{"value":140560421684736},"rcx":{"value":140560417597264},"flavor":"x86_THREAD_STATE","rdi":{"value":1536}},"queue":"com.apple.main-thread","frames":[{"imageOffset":24686429,"symbol":"clang::ASTContext::getASTRecordLayout(clang::RecordDecl const*) const","symbolLocation":189,"imageIndex":0},{"imageOffset":23830258,"symbol":"clang::ASTContext::getTypeInfoImpl(clang::Type const*) const","symbolLocation":1666,"imageIndex":0},{"imageOffset":23835371,"symbol":"clang::ASTContext::getTypeInfo(clang::Type const*) const","symbolLocation":139,"imageIndex":0},{"imageOffset":23828696,"symbol":"clang::ASTContext::getTypeInfoImpl(clang::Type const*) const","symbolLocation":104,"imageIndex":0},{"imageOffset":23835371,"symbol":"clang::ASTContext::getTypeInfo(clang::Type const*) const","symbolLocation":139,"imageIndex":0},{"imageOffset":23829028,"symbol":"clang::ASTContext::getTypeInfoImpl(clang::Type const*) const","symbolLocation":436,"imageIndex":0},{"imageOffset":23835371,"symbol":"clang::ASTContext::getTypeInfo(clang::Type const*) const","symbolLocation":139,"imageIndex":0},{"imageOffset":23835830,"symbol":"clang::ASTContext::getTypeAlignInChars(clang::QualType) const","symbolLocation":22,"imageIndex":0},{"imageOffset":22886257,"symbol":"clang::Sema::getNamedReturnInfo(clang::VarDecl const*)","symbolLocation":257,"imageIndex":0},{"imageOffset":23276635,"symbol":"clang::TemplateDeclInstantiator::VisitVarDecl(clang::VarDecl*, bool, llvm::ArrayRef<clang::BindingDecl*>*)","symbolLocation":715,"imageIndex":0},{"imageOffset":23457753,"symbol":"void llvm::function_ref<void ()>::callback_fn<clang::Sema::SubstDecl(clang::Decl*, clang::DeclContext*, clang::MultiLevelTemplateArgumentList const&)::$_2>(long)","symbolLocation":25,"imageIndex":0},{"imageOffset":21103277,"symbol":"clang::Sema::runWithSufficientStackSpace(clang::SourceLocation, llvm::function_ref<void ()>)","symbolLocation":45,"imageIndex":0},{"imageOffset":23310427,"symbol":"clang::Sema::SubstDecl(clang::Decl*, clang::DeclContext*, clang::MultiLevelTemplateArgumentList const&)","symbolLocation":155,"imageIndex":0},{"imageOffset":23244640,"symbol":"clang::TreeTransform<(anonymous namespace)::TemplateInstantiator>::TransformDeclStmt(clang::DeclStmt*)","symbolLocation":144,"imageIndex":0},{"imageOffset":23237153,"symbol":"clang::TreeTransform<(anonymous namespace)::TemplateInstantiator>::TransformCompoundStmt(clang::CompoundStmt*, bool)","symbolLocation":209,"imageIndex":0},{"imageOffset":23188276,"symbol":"clang::Sema::SubstStmt(clang::Stmt*, clang::MultiLevelTemplateArgumentList const&)","symbolLocation":84,"imageIndex":0},{"imageOffset":23315754,"symbol":"clang::Sema::InstantiateFunctionDefinition(clang::SourceLocation, clang::FunctionDecl*, bool, bool, bool)","symbolLocation":1338,"imageIndex":0},{"imageOffset":23323821,"symbol":"clang::Sema::PerformPendingInstantiations(bool)","symbolLocation":333,"imageIndex":0},{"imageOffset":21107386,"symbol":"clang::Sema::ActOnEndOfTranslationUnitFragment(clang::Sema::TUFragmentKind)","symbolLocation":170,"imageIndex":0},{"imageOffset":21109515,"symbol":"clang::Sema::ActOnEndOfTranslationUnit()","symbolLocation":91,"imageIndex":0},{"imageOffset":20943029,"symbol":"clang::Parser::ParseTopLevelDecl(clang::OpaquePtr<clang::DeclGroupRef>&, bool)","symbolLocation":757,"imageIndex":0},{"imageOffset":20475476,"symbol":"clang::ParseAST(clang::Sema&, bool, bool)","symbolLocation":324,"imageIndex":0},{"imageOffset":13835693,"symbol":"clang::FrontendAction::Execute()","symbolLocation":45,"imageIndex":0},{"imageOffset":13451734,"symbol":"clang::CompilerInstance::ExecuteAction(clang::FrontendAction&)","symbolLocation":246,"imageIndex":0},{"imageOffset":13978776,"symbol":"clang::ExecuteCompilerInvocation(clang::CompilerInstance*)","symbolLocation":1416,"imageIndex":0},{"imageOffset":20970,"symbol":"cc1_main(llvm::ArrayRef<char const*>, char const*, void*)","symbolLocation":1034,"imageIndex":0},{"imageOffset":17465,"symbol":"ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&)","symbolLocation":633,"imageIndex":0},{"imageOffset":16642,"symbol":"driver_main(int, char const**)","symbolLocation":3602,"imageIndex":0},{"imageOffset":12944,"symbol":"main","symbolLocation":208,"imageIndex":0},{"imageOffset":21790,"symbol":"start","symbolLocation":462,"imageIndex":1}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4429770752,
+    "size" : 71516160,
+    "uuid" : "adc9168c-13ad-3edb-ac8f-57e128089f19",
+    "path" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/bin\/clang",
+    "name" : "clang"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4713066496,
+    "size" : 442368,
+    "uuid" : "dd9e80de-fb3b-349b-96a4-46874ad34d11",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  }
+],
+  "sharedCache" : {
+  "base" : 140703340355584,
+  "size" : 15224815616,
+  "uuid" : "6cc5ecdc-5119-37f0-9a85-4f48a50f5f78"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=446.1M resident=0K(0%) swapped_out_or_unallocated=446.1M(100%)\nWritable regions: Total=586.0M written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=586.0M(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nKernel Alloc Once                    8K        1 \nMALLOC                           193.7M      282 \nMALLOC guard page                   16K        4 \nMALLOC_NANO (reserved)           384.0M        1         reserved VM address space (unallocated)\nSTACK GUARD                       56.0M        1 \nStack                             8192K        2 \nVM_ALLOCATE                          8K        2 \n__DATA                            6178K       40 \n__DATA_CONST                       288K       34 \n__DATA_DIRTY                        58K       22 \n__LINKEDIT                       372.9M        6 \n__OBJC_RO                         82.6M        1 \n__OBJC_RW                         3200K        2 \n__TEXT                            73.2M       45 \ndyld private memory               1024K        1 \nmapped file                       2904K       53 \nshared memory                        8K        1 \n===========                     =======  ======= \nTOTAL                              1.2G      498 \nTOTAL, minus reserved VM space   799.8M      498 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "60356660bbe37970735c5624",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000027
+    },
+    {
+      "rolloutId" : "6112e14f37f5d11121dcd519",
+      "factorPackIds" : {
+        "SIRI_TEXT_TO_SPEECH" : "62265b250683fd69cdcf0e26"
+      },
+      "deploymentId" : 240000068
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}
